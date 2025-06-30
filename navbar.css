@@ -1,0 +1,62 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    z-index: 9999;
+    background-color: #ffcb05;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border-bottom: 5px solid rgb(117, 44, 233);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    background-color: #3b4cca;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 2px 4px 0px #2a2a2a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #2a75bb; 
+    transform: translateY(-2px);
+    box-shadow: 2px 6px 0px #1a1a1a;
+    cursor: pointer;
+}
+
+.logout {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.logout a {
+  background-color: rgb(128, 128, 128);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.logout a:hover {
+    background-color: rgb(103, 102, 102);
+}

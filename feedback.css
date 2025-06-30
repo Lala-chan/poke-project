@@ -1,0 +1,150 @@
+body {
+    margin: 0px;
+}
+
+main {
+    background-image: url(/Project/Img/poke-ball.jpg);
+    background-repeat: repeat;
+    background-size: 80px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#reviewForm {
+    padding-top: 60px;
+    width: 70%;
+    height: 100vh;
+    float: right;
+    margin: auto 20% 0px 20%;
+    background-color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form label {
+    margin-top: 22px;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.form input, .form textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    margin: 12px auto;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid rgb(4, 4, 84);
+}
+
+.form textarea {
+    margin-top: 25px;
+}
+
+label:hover + input,
+label:hover + textarea {
+  background-color: initial !important;
+  cursor: default;
+}
+
+input:is(:hover, :focus),
+textarea:is(:hover, :focus) {
+    background-color: rgb(226, 239, 244);
+    cursor: pointer;
+}
+
+.form-field, .form button {
+  opacity: 0; /* Significa che all’inizio è invisibile*/
+  transform: translateY(30px); /*Lo sposta di 30 pixel verso il basso inizialmente. Serve a creare un effetto di "salita" */
+  animation: fadeInUp 0.6s ease forwards;/*ANIMAZIONE FADEINUP 
+0.6s è la durata 
+ease è il tipo di curva dell’animazione (inizia lenta, accelera e rallenta).
+forwards fa sì che l’elemento mantenga il suo stato finale*/
+}
+
+.form-field:nth-child(1) { animation-delay: 0.2s; }
+.form-field:nth-child(2) { animation-delay: 0.4s; }
+.form-field:nth-child(3) { animation-delay: 0.6s; }
+.form-field:nth-child(4) { animation-delay: 0.8s; }
+.form button { animation-delay: 1s;}
+/* assegno un ritardo diverso ad ogni elemento */
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} /* La parola to indica lo stato finale: pienamente visibile (opacity: 1) 
+e tornato nella sua posizione originale (translateY(0)).”*/
+
+.form button {
+    margin-top: 30px;
+    border: none;
+    padding: 12px 40px 12px 25px;
+    border-radius: 8px;
+    background: linear-gradient(to right, yellow, blue);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.425);
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+.form button:hover {
+    background: linear-gradient(to right, rgb(180, 180, 14), rgb(3, 3, 134));
+    transform: scale(1.05);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.error:empty {
+  display: none;
+}
+
+.error {
+    font-size: 12px;
+    color: rgb(190, 8, 8);
+    font-weight: bold;
+    background-color: #ffe5e5;
+    border: 1px solid rgb(255, 150, 150);
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-top: 8px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.stars-input {
+  direction: rtl; /*direction right to left */
+  unicode-bidi: bidi-override;
+  display: flex; /* dispone le stelle in riga*/
+  justify-content: center;
+  gap: 5px;
+}
+
+.stars-input input {
+  display: none;/* nasconde i radio button*/
+}
+
+.stars-input label {
+  font-size: 30px;
+  color: lightgray;
+  cursor: pointer;
+  transition: color 0.2s; /*quando cambiano colore (hover o selezione),
+  la transizione è fluida, con un leggero effetto fade.*/
+}
+
+.stars-input input:checked ~ label, /*colora d'oro tutte le stelle a sinistra di quella cliccata
+seleziona i fratelli successivi nel DOM, e grazie alla direzione RTL, 
+si applica verso sinistra visivamente*/
+.stars-input label:hover,
+.stars-input label:hover ~ label {
+  color: gold;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokèbacks</title>
+    <link rel="stylesheet" href="/Project/navbar.css">
+    <link rel="stylesheet" href="/Project/feedback-aside.css">
+    <link rel="stylesheet" href="/Project/feedback.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="/Project/poke_homepage.html">Pokè Home</a> </li>
+                <li> <a href="/Project/poke_list.html">Pokè List</a> </li>
+                <li> <a href="">Pokè Battle</a> </li>   
+                <li> <a href="/Project/feedback.html">Feedbacks</a> </li>
+                <li class="logout"> <a href="/Project/login.html">Logout</a></li>   
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <aside class="feedback" role="complementary" aria-label="User reviews">
+            <H2>what our trainers said about us!</H2>
+            
+            <div class="slider-box">
+                <div class="slider">
+                    <div class="review">
+                        <h3>Ash Ketchum</h3>
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                        <p>
+                        “This is the best PokéDex-style site I’ve ever used! Pikachu approved!” ⚡
+                        </p>
+                    </div>
+
+
+                    <div class="review">
+                        <h3>Misty</h3>
+                        <div class="stars">
+                            ★★★★☆
+                        </div>
+                        <p>
+                            “Stylish and easy to navigate... even Psyduck figured it out!” 🦆
+                        </p>
+                    </div>
+
+
+                    <div class="review">
+                        <h3>Team Rocket</h3>
+                        <div class="stars">
+                            ★★★☆☆
+                        </div>
+                        <p>
+                            “We tried to steal the layout... but we ended up stealing the spotlight!” 💥✨
+                        </p>
+                    </div>
+
+
+                    <div class="review">
+                        <h3>Brock</h3>
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                        <p>
+                        “Browsing this site felt like cooking the perfect curry: well-balanced, full of surprises, and absolutely delicious! I’d recommend it to every Trainer… and foodie!” 🍛😋
+                        </p>
+                    </div>
+
+
+                    <div class="review">
+                        <h3>Professor Oak</h3>
+                        <div class="stars">
+                        ★★★★★ 
+                        </div>
+                        <p>
+                        “A brilliant portal! Full of info, well organized… though I keep clicking the homepage thinking it’s a Pokédex. Must be my age showing.” 🧬🧓
+                        </p>
+                    </div>
+
+
+                    <div class="review">
+                        <h3>Gary Oak</h3>
+                        <div class="stars">
+                            ★★★★☆
+                        </div>
+                        <p>
+                        “I gotta admit, I was impressed: fast, flashy, and cooler than a Charizard at sunset. Just don’t go telling anyone... I’ve got a rep to keep.” 😎🔥
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-buttons">
+                <button id="prev">↑</button>
+                <button id="next">↓</button>
+            </div>
+
+        </aside>
+
+
+
+        <section id="reviewForm">
+
+            <form id="form" class="form">
+                <div class="form-field">
+                    <label for="trainerName">Put your trainer name:</label>
+                    <input id="trainerName" type="text" name="name" placeholder="Ash Ketchum" >
+                    <div id="errorName" class="error"></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="ash@gmail.com">
+                    <div id="errorEmail" class="error"></div>
+                </div>
+
+                <div class="form-field form-rating">
+                    <label for="rating">How many stars do we deserve?</label>
+                    
+                    <div class="stars-input">
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                    </div>
+                    
+                    <div id="errorRating" class="error"></div>
+                
+                </div>
+
+                <div class="form-field">
+                    <label for="comment">Leave your comment here:</label>
+                    <textarea name="comment" id="comment" rows="6"
+                     cols="50" placeholder="Write here"></textarea>
+                    <div id="errorComment" class="error"></div> 
+                </div>   
+
+                <button type="submit" id="sendBtn" >⚡Invia!</button>
+            </form>          
+
+        </section>
+
+    </main>
+    <script src="/Project/slide.js"></script>
+    <script src="/Project/review_form.js"></script>
+</body>
+</html>

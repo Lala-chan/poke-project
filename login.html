@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Pokèmon</title>
+    <link rel="stylesheet" href="/Project/login.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="header">
+                <h1 id="welcomeTitle"> Welcome Trainer!</h1>
+                <h2 id="welcomeSubtitle">Login before throwing your Pokeball!</h2>
+            </div>
+
+            <form id="form" class="form">
+                <div class="form-field">
+                    <label for="trainerName">Put your trainer name:</label>
+                    <input id="trainerName" type="text" name="name" placeholder="Ash Ketchum" >
+                    <div id="errorName" class="error"></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="ash@gmail.com">
+                    <div id="errorEmail" class="error"></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="password" placeholder="Enter you password">
+                    <div id="errorPsw" class="error"></div> 
+                </div>   
+
+                <button type="submit" id="loginBtn" >⚡Use Login! It's Super Effective!</button>
+            </form>          
+        </section>
+        <section>
+            <p id="intro">
+                Qui ci sarà una breve descrizione di quello che succederà una volta loggati a cui soltanto i fidelizzati possono accedere!
+            </p>
+        </section>
+    </main>
+    <script src="/Project/login.js"></script>
+</body>
+</html>

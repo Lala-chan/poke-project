@@ -1,0 +1,50 @@
+main {
+    background-image: url(/Project/Img/poke-ball.jpg);
+    background-repeat: repeat;
+    background-size: 80px;
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 100px;
+}
+
+.pokemon-list {
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.pokemon-card {
+    background-color: rgba(54, 72, 213, 0.792);
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
+    transform: scale(1.00);
+}
+
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.pokemon-heading {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(161, 80, 237);
+    box-shadow: 1px 3px 5px 3px rgb(234, 87, 207);
+    border-radius: 10px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.665);
+    background-size: 50%;
+}
+

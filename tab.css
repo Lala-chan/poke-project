@@ -1,0 +1,36 @@
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+button {
+    font-weight: bold;
+    background-color: rgba(193, 156, 230, 0.857);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 3px rgb(226, 68, 173);
+    border-color: yellow;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(240, 98, 212, 0.857);    
+}
+
+.clicked {
+    box-shadow: none;
+    border-color: black;
+    background-color: rgba(240, 98, 212, 0.857);
+}
+
+.tab-flex {
+    display: flex;
+    padding-left: 10px;
+}
+
+.tab-flex p {
+    padding-left: 25px;
+}

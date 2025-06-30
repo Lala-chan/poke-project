@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokèpage</title>
+    <link rel="stylesheet" href="/Project/tab.css">
+    <link rel="stylesheet" href="/Project/navbar.css">
+    <link rel="stylesheet" href="/Project/poke-home.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="/Project/poke_homepage.html">Pokè Home</a> </li>
+                <li> <a href="/Project/poke_list.html">Pokè List</a> </li>
+                <li> <a href="">Pokè Battle</a> </li>   
+                <li> <a href="/Project/feedback.html">Feedbacks</a> </li>   
+                <li class="logout"> <a href="/Project/login.html">Logout</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sigle" class="video">
+            <iframe width="840" height="473" src="https://www.youtube.com/embed/wjzHzEPk-KY?si=PLiKc0WKT9kk6_QF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <article class="plot">
+            <h1 class="plot-title">The Origins of the Pokémon World</h1>
+            <p class="plot-text">
+                Long ago, before cities rose and routes were mapped, the world was wild, a vast land where mystical creatures known as Pokémon roamed freely. These beings, each with unique abilities and personalities, lived in balance with nature. Some could breathe fire, others summon lightning, or even bend time and space.
+                From this ancient harmony, a new bond was born: between humans and Pokémon. People began training these creatures not to control them, but to fight alongside them, to grow, evolve, and form unbreakable friendships.
+                The journey truly began in Kanto, where a young Trainer named Red received his first partner, a small fire Pokémon, Charmander. With nothing but a dream and a Pokéball, he set off to conquer the Pokémon League, challenge the fearsome Elite Four, and stand up to the sinister plans of Team Rocket, an organization bent on exploiting Pokémon for power.
+                As Red’s journey unfolded, he encountered ancient mysteries: haunted towers, legendary birds, and whispers of a mythical creature named Mew. Deep in a lab, scientists used Mew’s DNA to create a new being... Mewtwo. But they had gone too far: Mewtwo was powerful, intelligent... and angry.
+                The world of Pokémon is one of battles and bonds, rivalries and legends. But more than that, it is a world where courage, friendship, and heart always lead the way. And now, it’s your turn, young Trainer...
+                Your journey begins. ⚡
+            </p>
+        </article>
+        <section class="personaggi">
+            <div class="tab">
+                <button class="tablinks clicked" onclick="openCharacter(event, 'ash')">Ash Ketchum</button>
+                <button class="tablinks" onclick="openCharacter(event, 'misty')">Misty</button>
+                <button class="tablinks" onclick="openCharacter(event, 'brock')">Brock</button>
+                <button class="tablinks" onclick="openCharacter(event, 'professor')">Professor Oak</button>
+                <button class="tablinks" onclick="openCharacter(event, 'gary')">Gary Oak</button>
+                <button class="tablinks" onclick="openCharacter(event, 'teamRocket')">Team Rocket</button>
+            </div>
+
+            <div id="ash" class="tabcontent active">
+                <h1>Ash Ketchum</h1>
+
+                <div class="tab-flex">
+                    <img src="/Project/Img/ash.webp" alt="Ash" width="200" height="350">
+
+                    <p>
+                        <i>"I choose you, Pikachu!"</i><br>
+                        Ash Ketchum is a bold and energetic Pokémon Trainer from Pallet Town with one big dream: to become the world’s greatest Pokémon Master!
+                        He may not be the most organized (he overslept the day he got Pikachu...), but he makes up for it with heart, bravery, and a headstrong spirit that never quits.
+                        Ash is known for rushing into battle, helping strangers, and forming deep bonds with both Pokémon and people — especially those grumpy Pokémon that nobody else can handle!
+                        Though he doesn’t always win, he never gives up, because for Ash, every battle is a step forward.
+                        <br><i>"Even if I lose today, I’ll win tomorrow. That’s what it means to be a Trainer!" ⚡</i>
+                    </p>
+
+                </div>
+                
+            </div>
+
+            <div id="misty" class="tabcontent">
+                <h1>Misty</h1>
+
+                <div class="tab-flex">
+                    <img src="/Project/Img/misty.png" alt="Misty" width="200" height="350">
+
+                    <p>
+                        <i>"Don’t call me short! I’m just fun-sized!"</i><br>
+                        Misty is the Cerulean City Gym Leader and a fierce Water-type Pokémon specialist. Don’t be fooled by her age, Misty’s got a fiery temper, a sharp tongue, and a soft spot for cute Pokémon (especially Togepi!).
+                        She joins Ash on his journey, originally just to get her broken bike back but ends up becoming one of his closest friends and travel companions.
+                        While she often scolds Ash for his recklessness, she’s incredibly brave, loyal, and always ready to dive into danger (or a lake) if her friends need her.
+                        Misty believes in battling with strategy, heart, and style.. and she’s not afraid to put someone in their place if they underestimate her.
+                        <br><i>"Being a Gym Leader isn’t just about strength, it’s about heart!" 🌊</i>
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="brock" class="tabcontent">
+                <h1>Brock</h1>
+
+                <div class="tab-flex">
+                    <img src="/Project/Img/brock.webp" alt="Brock" width="200" height="350">
+
+                    <p>
+                        <i>"Cooking, caring, and rock-solid battling — I do it all!"</i><br>
+                        Brock is the Pewter City Gym Leader and a master of Rock-type Pokémon. Calm, wise, and surprisingly domestic, Brock is the “big brother” of the group; always cooking meals, giving advice, and patching up both Pokémon and Trainers alike.
+                        He dreams of becoming a world-class Pokémon Breeder and knows everything from Pokémon nutrition to herbal remedies.
+                        But for all his wisdom, there’s one thing he can’t control: his hopeless crushes. Whether it’s a Nurse Joy or an Officer Jenny, Brock falls in love faster than Ash throws a Pokéball, and gets dragged away just as quickly.
+                        Reliable, nurturing, and brave in battle, Brock is the glue that keeps the team together.
+                        <br><i>"Taking care of Pokémon is just like taking care of people — you need love, patience… and snacks." 🧅🔥</i>
+                    </p>
+                </div>
+
+            </div>    
+            
+            <div id="professor" class="tabcontent">
+                <h1>Professor Oak</h1>
+
+                <div class="tab-flex">
+                    <img src="/Project/Img/professor.webp" alt="Professor Oak" width="200" height="350">
+
+                    <p>
+                        <i>"There’s a time and place for everything — but not now!"</i><br>
+                        Professor Oak is the leading Pokémon researcher in the Kanto region and the very first person most Trainers meet on their journey. He’s the wise old mentor who hands out starter Pokémon, Pokédexes, and the occasional cryptic advice, often followed by awkward pauses and dad jokes.
+                        Despite his forgetful nature (he can’t even remember his own grandson’s name sometimes...), Oak is a brilliant scientist who laid the foundation for modern Pokémon studies. He believes deeply in the bond between Trainers and Pokémon, and encourages young Trainers to explore, discover, and build their own stories.
+                        Oh, and if you thought being a professor kept him out of trouble… you’ve clearly never seen him ride a Dodrio.
+                        <br><i>"Your Pokémon journey is just beginning… now go and make me proud — and fill that Pokédex!" 🌟</i>
+                    </p>
+                </div>
+
+            </div> 
+
+            <div id="gary" class="tabcontent">
+                <h1>Gary Oak</h1>
+
+                <div class="tab-flex">
+                    <img src="/Project/Img/gary.png" alt="Gary" width="200" height="350">
+
+                    <p>
+                        <i>"Smell ya later!"</i><br>
+                        Gary Oak is Ash’s childhood rival and the grandson of Professor Oak.
+                        Confident, cocky, and always one step ahead (or so he claims), Gary starts his journey as the cool kid with all the badges, all the fans, and none of Ash’s humble beginnings.
+                        Early on, he sees Pokémon as a means to prove he’s the best, but over time, Gary matures into a serious, dedicated researcher.
+                        Beneath the arrogance lies real talent and a genuine desire to surpass his limits, even if it means occasionally giving Ash a well-deserved compliment (very occasionally).
+                        He may not always win, but when Gary shows up, he makes sure you know it.
+                        <br><i>"I’m not just a rival… I’m your motivation to do better." 🥇</i>
+                    </p>
+                    
+                </div>
+
+            </div> 
+
+            <div id="teamRocket" class="tabcontent">
+               <h1>Team Rocket (Jessie, James & Meowth)</h1>
+
+                <div class="tab-flex">
+                    
+                    <img src="/Project/Img/teamrocket1.png" alt="Team Rocket" width="250" height="350">
+
+                    <p>
+                        <i>"Prepare for trouble — and make it double!"</i><br>
+                        Team Rocket is the world’s most dramatic villain trio made up of the dazzling Jessie, the flamboyant James, and their wisecracking, talking Pokémon companion, Meowth.
+                        They work for the evil organization Team Rocket, led by the elusive Giovanni… though it’s safe to say this trio doesn’t exactly strike fear into the hearts of Trainers.
+                        Their mission? To steal rare and powerful Pokémon, especially Ash’s Pikachu.
+                        Their strategy? Over-the-top disguises, elaborate machines, and spectacular failures usually ending in an explosive "blasting off again!"
+                        Despite being the “bad guys,” Team Rocket shows surprising loyalty to each other and even moments of tenderness (especially toward their Pokémon).
+                        They're not just villains, they’re misunderstood dreamers… with amazing hair.
+                        <br><i>"We're not just stealing Pokémon... we're stealing the spotlight!" 💥✨</i><br>
+                    </p>
+
+                </div>
+
+            </div> 
+        </section>
+    </main>
+    <script src="/Project/tab.js"></script>
+</body>
+</html>
