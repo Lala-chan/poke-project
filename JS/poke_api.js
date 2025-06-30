@@ -62,7 +62,7 @@ async function pokelist(params) {
         })
 
 
-        dialogTitle = document.createElement("h1")
+        const dialogTitle = document.createElement("h1")
         dialogTitle.textContent = pokemonData.name
         card.appendChild(dialog)
         dialog.appendChild(dialogDiv) 

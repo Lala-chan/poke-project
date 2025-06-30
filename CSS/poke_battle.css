@@ -1,0 +1,26 @@
+main {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    height: 100vh;
+}
+
+#pokeLeft, #pokeRight {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 100vh;
+}
+
+.versus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-size: 100px;
+}
+

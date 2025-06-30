@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Battle</title>
+    <link rel="stylesheet" href="/CSS/poke_battle.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+
+</head>
+<body>
+
+     <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="/poke_homepage.html">Pokè Home</a> </li>
+                <li> <a href="/poke_list.html">Pokè List</a> </li>
+                <li> <a href="/poke_battle.html">Pokè Battle</a> </li>   
+                <li> <a href="/feedback.html">Feedbacks</a> </li>
+                <li class="logout"> <a href="/login.html">Logout</a></li>   
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="pokeLeft" class="display-pokemon">
+
+            <label for="pokemonSelectorSx">Choose your Pokèmon!</label>
+            <select name="pokemonSelectorSx" id="pokemonSelectorSx"></select>
+           
+            <div class="hp-container">
+                <div id="hpBarSx"></div>
+            </div>
+            
+            <button id="atkLeft" class="atk-button" disabled>ATTACK!</button>
+        </div>
+
+
+        <div class="versus">
+
+            <h1>VS</h1>
+            <BUtton id="fightBtn">FIGHT!</BUtton>
+        
+        </div>
+
+
+        <div id="pokeRight" class="display-pokemon">
+           
+            <label for="pokemonSelectorDx">Choose your opponent!</label>
+            <select name="pokemonSelectorDx" id="pokemonSelectorDx"></select>
+            
+            <div class="hp-container">
+                <div id="hpBarDx"></div>
+            </div>
+
+            <button id="atkRight" class="atk-button" disabled>ATTACK!</button>
+        </div>
+
+    </main>
+    <script src="/JS/poke_battle.js"></script>
+</body>
+</html>
