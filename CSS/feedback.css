@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    background-image: url(/Project/Img/poke-ball.jpg);
+    background-image: url(/Img/poke-ball.jpg);
     background-repeat: repeat;
     background-size: 80px;
     display: flex;

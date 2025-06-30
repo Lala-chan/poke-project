@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    background-image: url("/Project/Img/pokemon_background.png");
+    background-image: url("/Img/pokemon_background.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
