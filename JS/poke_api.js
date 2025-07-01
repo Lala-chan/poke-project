@@ -104,8 +104,6 @@ async function pokelist(params) {
         typeParag.textContent = "Type: " + type.type.name
         dialogDiv.appendChild(typeParag)
        }
-
-
     }
 }
 
