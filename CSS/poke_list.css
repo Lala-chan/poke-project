@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    margin-bottom: 3px;
+}
+
 main {
     background-image: url(/Img/poke-ball.jpg);
     background-repeat: repeat;
@@ -48,3 +53,20 @@ dialog::backdrop {
     background-size: 50%;
 }
 
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+
+#scrollTop:hover {
+    background-color: rgb(153, 153, 232);
+}

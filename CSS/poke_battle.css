@@ -1,26 +1,91 @@
+body {
+    margin: 0;
+}
+
 main {
-    margin-top: 70px;
+    margin-top: 66px;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    align-items: center;
+    align-items: stretch;
     height: 100vh;
+    background-color: #f2f2f2;
+    position: relative;
+    overflow: hidden;
 }
 
 #pokeLeft, #pokeRight {
-    width: 49%;
+    width: 48%;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    background: #d9ecff;
+    border: none;
+}
+
+#pokeRight {
+    background: #ffe3e3;
 }
 
 .versus {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    font-size: 100px;
+    font-size: 90px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 4px 2px 10px rgb(222, 152, 33);
+    z-index: 2;
 }
 
+.display-pokemon label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+
+.poke-back img {
+    width: 250%;   
+}
+
+
+.hp-container {
+    background-color: red;
+    width: 80%;
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#hpBarSx, #hpBarDx {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+}
+
+#fightBtn {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgb(255, 68, 0), rgb(217, 255, 0));
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    transition: transform 0.2s ease;
+    scale: 1;
+    z-index: 2;
+}
+
+#fightBtn:hover {
+    transform: translateX(-50%) scale(1.1);
+    cursor: pointer;
+}
