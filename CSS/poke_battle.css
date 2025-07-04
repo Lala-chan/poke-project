@@ -46,8 +46,12 @@ main {
     padding-bottom: 10px;
 }
 
+.poke-back{
+    width: 100%;
+}
+
 .poke-back img {
-    width: 250%;   
+    width: 100%;   
 }
 
 
@@ -88,4 +92,14 @@ main {
 #fightBtn:hover {
     transform: translateX(-50%) scale(1.1);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .versus {
+        top: 30%;
+        font-size: 60px;
+    }
+   
+    
 }

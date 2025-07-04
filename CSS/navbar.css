@@ -1,11 +1,35 @@
-.navbar {
+body {
+    margin-top: 140px; 
+}
+
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;  
+    z-index: 10000;
+    background-color: #ffcb05;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.page_title {
+    margin: 0;
+    color: #3b4cca;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 72px; 
+    left: 0;
+    width: 100%;  
     z-index: 9999;
     background-color: #ffcb05;
-    padding: 20px 0;
+    padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     border-bottom: 5px solid rgb(117, 44, 233);
 }
@@ -42,6 +66,28 @@
     cursor: pointer;
 }
 
+.burger_btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.burger_btn span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #3b4cca;
+    margin-bottom: 6px;
+    border-radius: 2px;
+}
+
 .logout {
     margin-left: auto;
     margin-right: 5px;
@@ -59,4 +105,38 @@
 
 .logout a:hover {
     background-color: rgb(103, 102, 102);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    
+    .navbar.navbar-open {
+        display: block;
+    }
+    
+    body {
+        margin-top: 100px; 
+    }
+
+    .burger_btn {
+        display: block;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .logout a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
 }

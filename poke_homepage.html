@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokèpage</title>
+    <title>PokèWorld - Homepage | Explore the PokémonWorld</title>
+    
+    <meta name="description" content="Welcome in PokèWorld! Read about the origins of the Pokèmons and find out something about your favorite characters">
+    <meta name="keywords" content="Pokemon, Ash Ketchum, Pikachu, Misty, Brock, Team Rocket">
+    <meta name="author" content="Chiara Di Modica">
+    
     <link rel="stylesheet" href="/CSS/tab.css">
     <link rel="stylesheet" href="/CSS/navbar.css">
     <link rel="stylesheet" href="/CSS/poke-home.css">
 </head>
 <body>
     <header>
+        <h1 class="page_title">PokèWorld</h1>
         <nav class="navbar">
             <ul>
                 <li> <a href="/poke_homepage.html">Pokè Home</a> </li>
                 <li> <a href="/poke_list.html">Pokè List</a> </li>
                 <li> <a href="/poke_battle.html">Pokè Battle</a> </li>   
-                <li> <a href="/feedback.html">Feedbacks</a> </li>   
+                <li> <a href="/feedback.html">Feedbacks</a> </li> 
+                <li> <a href="/profile.html">Reserved Area</a> </li> 
                 <li class="logout"> <a href="/login.html">Logout</a></li>   
             </ul>
         </nav>
+        <button class="burger_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
     <main>
         <section id="sigle" class="video">
-            <iframe width="840" height="473" src="https://www.youtube.com/embed/wjzHzEPk-KY?si=PLiKc0WKT9kk6_QF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/wjzHzEPk-KY?si=PLiKc0WKT9kk6_QF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <article class="plot">
             <h1 class="plot-title">The Origins of the Pokémon World</h1>
@@ -161,5 +173,6 @@
         </section>
     </main>
     <script src="/JS/tab.js"></script>
+    <script src="/JS/navbar_mobile.js"></script>
 </body>
 </html>

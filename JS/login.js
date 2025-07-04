@@ -30,7 +30,7 @@ form.addEventListener("submit", function(event){
 
     if (password.value.trim() === "") {
        errorPsw.textContent = "Please write a valid password!"
-    }else if (password.length <= 8) {
+    }else if (password.value.length < 8) {
        errorPsw.textContent = "You're password is too short!"
     }
 

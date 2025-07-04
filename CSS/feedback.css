@@ -7,7 +7,6 @@ main {
     background-repeat: repeat;
     background-size: 80px;
     display: flex;
-    align-items: flex-start;
 }
 
 #reviewForm {
@@ -56,9 +55,8 @@ textarea:is(:hover, :focus) {
 
 .form-field, .form button {
   opacity: 0; /* Significa che all’inizio è invisibile*/
-  transform: translateY(30px); /*Lo sposta di 30 pixel verso il basso inizialmente. Serve a creare un effetto di "salita" */
-  animation: fadeInUp 0.6s ease forwards;/*ANIMAZIONE FADEINUP 
-0.6s è la durata 
+  transform: translateY(30px); /*Lo sposta di 30 pixel verso il basso inizialmente per poi risalire*/
+  animation: fadeInUp 0.6s ease forwards;/*ANIMAZIONE FADEINUP 0.6s è la durata 
 ease è il tipo di curva dell’animazione (inizia lenta, accelera e rallenta).
 forwards fa sì che l’elemento mantenga il suo stato finale*/
 }
@@ -76,7 +74,7 @@ forwards fa sì che l’elemento mantenga il suo stato finale*/
     transform: translateY(0);
   }
 } /* La parola to indica lo stato finale: pienamente visibile (opacity: 1) 
-e tornato nella sua posizione originale (translateY(0)).”*/
+e tornato nella sua posizione originale translateY(0)*/
 
 .form button {
     margin-top: 30px;
@@ -124,21 +122,20 @@ button:hover{
 .stars-input {
   direction: rtl; /*direction right to left */
   unicode-bidi: bidi-override;
-  display: flex; /* dispone le stelle in riga*/
+  display: flex; 
   justify-content: center;
   gap: 5px;
 }
 
 .stars-input input {
-  display: none;/* nasconde i radio button*/
+  display: none;
 }
 
 .stars-input label {
   font-size: 30px;
   color: lightgray;
   cursor: pointer;
-  transition: color 0.2s; /*quando cambiano colore (hover o selezione),
-  la transizione è fluida, con un leggero effetto fade.*/
+  transition: color 0.2s;
 }
 
 .stars-input input:checked ~ label, /*colora d'oro tutte le stelle a sinistra di quella cliccata
@@ -147,4 +144,25 @@ si applica verso sinistra visivamente*/
 .stars-input label:hover,
 .stars-input label:hover ~ label {
   color: gold;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+    max-width: 100%;
+    width: 90%;
+  }
+
+  #reviewForm {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: block;
+    float: none;
+  }
+    
+  .form input, .form textarea {
+    width: 90%;
+  }
 }

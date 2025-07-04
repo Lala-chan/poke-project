@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Profile - PokèWorld | Manage your data</title>
+    
+    <meta name="description" content="Manage your PokèWorld profile. Modifie your personal data and change password">
+    <meta name="keywords" content="profilo, allenatore, trainer, dati personali, password, Pokemon, account">
+    <meta name="author" content="Chiara Di Modica">
+    
+    
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/change_info.css">
+</head>
+<body>
+    <header>
+        <h1 class="page_title">PokèWorld</h1>
+        <nav class="navbar">
+            
+            <ul>
+                <li> <a href="/poke_homepage.html">Pokè Home</a> </li>
+                <li> <a href="/poke_list.html">Pokè List</a> </li>
+                <li> <a href="/poke_battle.html">Pokè Battle</a> </li>   
+                <li> <a href="/feedback.html">Feedbacks</a> </li>
+                <li> <a href="/profile.html">Reserved Area</a> </li> 
+                <li class="logout"> <a href="/login.html">Logout</a></li>   
+             </ul>
+
+        </nav>
+        <button class="burger_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <main>
+
+        <div class="info-container">
+        <h1>Trainer info</h1>
+        <p>Here you can change your personal information, such as your trainer name, email and password.</p>
+        </div>
+
+        <div class="form-container">
+            <form id="form" class="form">
+                    <div class="form-field">
+                        <label for="trainerName">Trainer name:</label>
+                        <input id="trainerName" type="text" name="name" value="Ash Ketchum" >
+                        <div id="errorNickname" class="error"></div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="firstName">First name:</label>
+                        <input id="firstName" type="text" name="name" value="Josh" >
+                        <div id="errorName" class="error"></div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="lastName">Last name:</label>
+                        <input id="lastName" type="text" name="name" value="Brown" >
+                        <div id="errorSurname" class="error"></div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email" value="joshbrown@gmail.com">
+                        <div id="errorEmail" class="error"></div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password">Password:</label>
+                        <input id="password" type="password" name="password" placeholder="Enter your current password" >
+                        <div id="errorPsw" class="error"></div> 
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="newPassword">New Password:</label>
+                        <input id="newPassword" type="password" name="password" placeholder="Enter your new password" >
+                        <div id="errorNewPsw" class="error"></div> 
+                    </div> 
+                    
+                    <div class="form-field">
+                        <label for="confPassword">Confirm Password:</label>
+                        <input id="confPassword" type="password" name="password" placeholder="Confirm your new password" >
+                        <div id="errorConfPsw" class="error"></div> 
+                    </div> 
+
+                    <button type="submit" id="saveBtn" >Save</button>
+                </form>    
+            </div>
+    </main>
+
+    <script src="/JS/navbar_mobile.js"></script>
+    <script src="/JS/change_info.js"></script>
+</body>
+</html>

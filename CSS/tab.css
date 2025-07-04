@@ -6,7 +6,7 @@
     display: block;
 }
 
-button {
+.tablinks {
     font-weight: bold;
     background-color: rgba(193, 156, 230, 0.857);
     border-radius: 8px;
@@ -15,7 +15,7 @@ button {
     border-color: yellow;
 }
 
-button:hover {
+.tablinks:hover {
     cursor: pointer;
     background-color: rgba(240, 98, 212, 0.857);    
 }

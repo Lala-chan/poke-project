@@ -5,6 +5,10 @@ aside {
   background-color: rgb(148, 195, 237);
   padding: 70px 15px 0px 15px;
 }
+aside h2 {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .slider-box {
   height: 500px;
@@ -32,5 +36,27 @@ aside {
     font-size: 24px;
     letter-spacing: 3px;
     text-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        max-width: 100%;
+        width: 100%;
+        height: auto; 
+        padding: 20px;
+        float: none;
+        display: block;
+    }
+    
+    .slider-box {
+        height: 300px; 
+    }
+    
+    .review {
+        height: 200px; 
+        width: 90%;
+        margin:auto;
+        margin-bottom: 20px;
+    }
 }
 
