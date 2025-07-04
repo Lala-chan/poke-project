@@ -1,5 +1,7 @@
 # 🎮 PokèWorld - Pokémon Web Project
 
+https://github.com/Lala-chan/poke-project
+
 Pokèmon World è progetto web interattivo sviluppato unicamente in frontend e dedicato al mondo dei Pokémon, con funzionalità per vedere i tuoi Pokèmon preferiti e farli scontrare!
 
 ## 🚀 Caratteristiche
