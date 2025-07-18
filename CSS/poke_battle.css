@@ -3,11 +3,10 @@ body {
 }
 
 main {
-    margin-top: 66px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    height: 100vh;
+    height: 85vh;
     background-color: #f2f2f2;
     position: relative;
     overflow: hidden;
@@ -41,6 +40,7 @@ main {
     z-index: 2;
 }
 
+
 .display-pokemon label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 10px;
@@ -51,7 +51,9 @@ main {
 }
 
 .poke-back img {
-    width: 100%;   
+    width: 60%;   
+    margin: auto;
+    display: block;
 }
 
 
